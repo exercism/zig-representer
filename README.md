@@ -1,38 +1,6 @@
-# Exercism Representer Template
+# Exercism Zig Representer
 
-This repository is a [template repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) for creating [representers][representers] for [Exercism][exercism] tracks.
-
-## Using the Representer Template
-
-1. Ensure that your track has not already implemented a representer. If there is, there will be a `https://github.com/exercism/<track>-representer` repository (i.e. if your track's slug is `python`, the representer repo would be `https://github.com/exercism/python-representer`)
-2. Follow [GitHub's documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) for creating a repository from a template repository
-   - Name your new repository based on your language track's slug (i.e. if your track is for Python, your representer repo name is `python-representer`)
-3. Remove this [Exercism Representer Template](#exercism-representer-template) section from the `README.md` file
-4. Replace `TRACK_NAME_HERE` with your track's name in the `README.md` file
-5. Build the representer, conforming to the [Representer interface specification](https://github.com/exercism/docs/blob/main/building/tooling/representers/interface.md).
-   - Update the files to match your track's needs. At the very least, you'll need to update `bin/run.sh`, `Dockerfile` and the test solutions in the `tests` directory
-   - Tip: look for `TODO:` comments to point you towards code that need updating
-   - Tip: look for `OPTIONAL:` comments to point you towards code that _could_ be useful
-
-Once you're happy with your representer, [open an issue on the exercism/exercism repo](https://github.com/exercism/exercism/issues/new?title=%5BTRACK%5D+Request+Representer+Repository) to request an official representer repository for your track.
-
-## Default Implementation
-
-The default implementation works as follows:
-
-- The `representation.txt` contains the concatenated solution files
-  - Solution files are separated by an empty line
-  - Solution files are identified via the the `.files.solution[]` property in the `.meta/config.json` file
-- The `mapping.json` contains an empty JSON object (`{}`)
-
-### Normalizations
-
-- Blank files in the solution files are removed in the `representation.txt`
-- Line-based trailing whitespace in the solution files is removed in the `representation.txt`
-
-# Exercism TRACK_NAME_HERE Representer
-
-The Docker image to automatically create a representation for TRACK_NAME_HERE solutions submitted to [Exercism].
+The Docker image to automatically create a representation for Zig solutions submitted to [Exercism].
 
 ## Run the representer
 
