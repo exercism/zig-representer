@@ -1,4 +1,4 @@
-FROM alpine:3.17
+FROM alpine:3.18
 
 # TODO: install packages required to run the representer
 RUN apk add --no-cache bash jq
